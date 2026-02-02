@@ -12,11 +12,22 @@ const title = (
     </h1>
 )
 
+const Titlefun = ()=> (
+  <h1 className="head" tabIndex="5">
+    {elem}
+    React Using JSX 🚀
+    </h1>
+)
+
+
 const HeadingComponent = ()=>{
   return(
     <div id="container">
     {/* we can write any java script code inside bracets*/}
     {title}
+    {Titlefun()}
+    <Titlefun/>
+    <Titlefun></Titlefun>
 <h1 className="header">Namste React Functional Component</h1>
 </div>
 )};
@@ -24,6 +35,7 @@ const HeadingComponent = ()=>{
 const titleNew = (
   <h1 className="head" tabIndex="5">
     <HeadingComponent/>
+    <HeadingComponent></HeadingComponent>
     React Using JSX 🚀
     </h1>
 )
