@@ -1,0 +1,22 @@
+{
+  "name": "namaste-react-2026",
+  "version": "1.0.0",
+  "description": "learning react by hareesh",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "hareesh",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "browsersList":[
+    "last 2 Chrome versions",
+    "last 2 Firefox versions"
+  ]
+}
