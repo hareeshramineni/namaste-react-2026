@@ -2,26 +2,25 @@
 import React from "react";
 import ReactDOM from "react-dom/client"
 
-  const parent= React.createElement("div",{id:"parent"},
-   [
-     React.createElement("div",{id:"chid"},
-      [React.createElement("h1",{},"I'm an h1 tag"),
-        React.createElement("h2",{},"I'm an h2 tag")
-      ]
-    ),
+//React.createElemnt => javascript object=> when we Render this to DOM => Html Element
+const heading = React.createElement("h1",{id:"heading"},"Namaste React🚀");
+console.log(heading);
 
-     React.createElement("div",{id:"chid2"},
-      [React.createElement("h1",{},"I'm an h1 tag"),
-        React.createElement("h2",{},"I'm an h2 tag")
-      ]
-    )
+//JSX => is not HTML =>it is HTML or xml like Syntax
+//JSX (transpiled before it reaches the JS Engine)-PARCEL-Babel
+//JSX => Babel Transpile it to React.createElement => ReactElement => JS Object =>Html Element(render)
+const jsxHeading = <h1 className="heading">Namste React Using JSX 🚀</h1>;
 
-   ]
-  );
-  
-  const heading =React.createElement("h1",{id:"heading",xyz:"abc"},"Hello world from React");
+const jsxHeadingMultiLine = (<h1 id="heading">
+  New Namste React Using JSX 🚀
+  </h1>);
 
-  console.log(heading);
+console.log(jsxHeading);
 
-  const root  = ReactDOM.createRoot(document.getElementById("root"));
-  root.render(parent);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(heading);
+root.render(jsxHeading);
+root.render(jsxHeadingMultiLine);
+
+

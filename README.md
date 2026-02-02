@@ -46,4 +46,15 @@ npx parcel build index.html
 - Tree Shaking -  remove unused code
 - Different dev and prod bundlers
 
+# npm scripts
+<!-- 
+  "scripts": {
+    "start" :"npx parcel index.html",
+    "build": "npx parcel build index.html",
+    "test": "jest"
+  } -->
+  - npm run start (run not required because start is reserved key word)
+  - npm start
+  - npm run build
+  
 
